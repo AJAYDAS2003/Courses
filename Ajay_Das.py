@@ -192,5 +192,4 @@ dic={
 
 
 df=pd.DataFrame(dic)
-with pd.ExcelWriter('Ajay_Das.xlsx') as writer:
-    df.to_excel(writer,sheet_name='sheet_1',index=False)
+df.to_csv('Ajay_Das.csv',index=False)
